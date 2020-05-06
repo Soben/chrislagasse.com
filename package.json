@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Personal website for Chris Lagasse, using the 11ty base by Zach Leatherman",
   "scripts": {
-    "build": "eleventy",
-    "watch": "DEBUG=* eleventy --serve --watch"
+    "build": "npm run sass && eleventy",
+    "watch": "npm-run-all sass --parallel watch:*",
+    "watch:eleventy": "eleventy --serve --watch",
+    "watch:sass": "npm run sass -- --watch",
+    "debug": "DEBUG=* eleventy --serve --watch",
+    "sass": "sass --style=compressed src/scss/main.scss src/public/css/index.css"
   },
   "repository": {
     "type": "git",
@@ -27,6 +31,10 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
-    "markdown-it-anchor": "^5.2.5"
+    "markdown-it-anchor": "^5.2.5",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "sass": "^1.26.5"
   }
 }
