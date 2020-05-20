@@ -23,8 +23,38 @@
 
 .logo {
   text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   img {
-    width: 60%;
-    max-width: 200px;
+    width: 30%;
+  }
+
+  span {
+    max-width: 50%;
+    display: block;
+    padding-left: 2rem;
+    text-align: left;
+    font-family: $serif;
+    color: $light-blue;
+    font-size: 4rem;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 3rem;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    img {
+      width: 60%;
+      max-width: 300px;
+    }
+
+    span {
+      display: none;
+    }
   }
 }
