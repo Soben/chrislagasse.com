@@ -7,27 +7,52 @@
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <script src="https://kit.fontawesome.com/d5ace7fa38.js" crossorigin="anonymous" defer></script>
   </head>
   <body>
-    <div>
+    <div class="container">
       <!-- intermediary wrapper -->
-      <aside>
-        <ul class="nav">
-        {%- for entry in collections.all | eleventyNavigation %}
-          <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-        {%- endfor %}
-        </ul>
+      <aside class="sidebar">
+        <div class="sidebar__content">
+          <div class="logo">
+            <img src="{{ '/img/magpie.png' | url }}" alt="logo of a magpie with blue highlights" />
+          </div>
+          <div class="icons">
+            <a href="https://github.com/soben" rel="me" target="_blank">
+              <i class="fab fa-github-square" alt="github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/chris-lagasse" rel="me" target="_blank">
+              <i class="fab fa-linkedin" alt="linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/soben" rel="me" target="_blank">
+              <i class="fab fa-instagram" alt="instagram"></i>
+            </a>
+            <a href="https://twitter.com/soben" rel="me" target="_blank">
+              <i class="fab fa-twitter-square" alt="twitter"></i>
+            </a>
+            <a href="mailto:chrislagasse@protonmail.com">
+              <i class="fas fa-envelope-square" alt="email"></i>
+            </a>
+          </div>
+          {# <ul class="nav">
+          {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+          {%- endfor %}
+          </ul> #}
+        </div>
       </aside>
       <div class="content">
-        <header>
-          <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-        </header>
+        <div class="content__sticky">
+          <header>
+            <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+          </header>
 
-        <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-          {{ content | safe }}
-        </main>
+          <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+            {{ content | safe }}
+          </main>
 
-        <footer></footer>
+          <footer>Footer Content.</footer>
+        </div>
       </div>
     </div>
     <!-- Current page: {{ page.url | url }} -->

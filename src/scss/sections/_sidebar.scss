@@ -1,0 +1,30 @@
+.sidebar {
+  background-color: $black;
+  color: $white;
+
+  a,
+  a:visited {
+    color: $light-blue;
+  }
+  a:hover,
+  a:focus {
+    color: $white;
+  }
+}
+
+.icons {
+  padding-top: $default-spacing;
+  text-align: center;
+  font-size: 2rem;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  text-align: center;
+  img {
+    width: 60%;
+    max-width: 200px;
+  }
+}

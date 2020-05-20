@@ -1,5 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Kadwa:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+
+@import "_reset";
+* {
+  box-sizing: border-box;
+}
+
 @import "_variables";
+@import "_layout";
 
 body {
-  background-color: $light-gray;
+  background-color: $white;
+  color: $black;
+  font-family: $sans-serif;
+
+  a,
+  a:visited {
+    color: $dark-blue;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    color: $light-blue;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+    font-family: $serif;
+  }
 }
+
+@import "sections/sidebar";
