@@ -1,5 +1,6 @@
 ---
 layout: layouts/main.njk
+includeSyntaxHighlighter: true
 eleventyNavigation:
   key: Home
   order: 1
@@ -10,6 +11,12 @@ eleventyNavigation:
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
+
+<blockquote>Kif might! Say what? Why would I want to know that? I've been there. My folks were always on me to groom myself and wear underpants. What am I, the pope? Now that the, uh, garbage ball is in space, Doctor, perhaps you can help me with my sexual inhibitions?<</blockquote>
+
+<pre><code>
+Kif might! Say what? Why would I want to know that? I've been there. My folks were always on me to groom myself and wear underpants. What am I, the pope? Now that the, uh, garbage ball is in space, Doctor, perhaps you can help me with my sexual inhibitions?<
+</code></pre>
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
 
