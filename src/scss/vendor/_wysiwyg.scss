@@ -170,17 +170,17 @@
 .wysiwyg blockquote p {
   margin-bottom: 0;
 }
-.wysiwyg code,
+// .wysiwyg code,
+// .wysiwyg pre,
 .wysiwyg kbd,
-.wysiwyg samp,
-.wysiwyg pre {
+.wysiwyg samp {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
   background-color: #f2f2f2;
   color: #333;
   font-size: 0.9em;
 }
-.wysiwyg code,
+// .wysiwyg code,
 .wysiwyg kbd,
 .wysiwyg samp {
   border-radius: 3px;
@@ -188,15 +188,15 @@
   padding: 0.1em 0.4em 0.2em;
   vertical-align: baseline;
 }
-.wysiwyg pre {
-  overflow: auto;
-  padding: 1em 1.2em;
-}
-.wysiwyg pre code {
-  background: none;
-  font-size: 1em;
-  line-height: 1em;
-}
+// .wysiwyg pre {
+//   overflow: auto;
+//   padding: 1em 1.2em;
+// }
+// .wysiwyg pre code {
+//   background: none;
+//   font-size: 1em;
+//   line-height: 1em;
+// }
 .wysiwyg figure {
   margin-bottom: 2.8em;
   text-align: center;
@@ -214,9 +214,9 @@
 .wysiwyg table {
   width: 100%;
 }
-.wysiwyg table pre {
-  white-space: pre-wrap;
-}
+// .wysiwyg table pre {
+//   white-space: pre-wrap;
+// }
 .wysiwyg th,
 .wysiwyg td {
   font-size: 1em;
@@ -235,12 +235,12 @@
   font-size: 0.9em;
   padding: 0.77778em;
 }
-.wysiwyg thead th code,
-.wysiwyg thead td code,
-.wysiwyg tfoot th code,
-.wysiwyg tfoot td code {
-  background-color: #fff;
-}
+// .wysiwyg thead th code,
+// .wysiwyg thead td code,
+// .wysiwyg tfoot th code,
+// .wysiwyg tfoot td code {
+//   background-color: #fff;
+// }
 .wysiwyg tbody tr {
   background-color: #fff;
 }

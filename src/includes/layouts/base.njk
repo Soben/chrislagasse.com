@@ -57,8 +57,7 @@
       </div>
     </div>
     {% if includeSyntaxHighlighter %}
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+      <script src="{{ '/js/vendor/highlight.js' | url }}"></script>
       <script>hljs.initHighlightingOnLoad();</script>
     {% endif %}
     <!-- Current page: {{ page.url | url }} -->
