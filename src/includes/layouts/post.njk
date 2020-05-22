@@ -2,8 +2,12 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
+<article>
+  <h1>{{ title }}</h1>
 
-{{ content | safe }}
+  {{ content | safe }}
+</article>
 
-<p><a href="{{ '/' | url }}">← Home</a></p>
+<div class="pagination">
+  <a class="link-back" href="{{ '/' | url }}"><i class="fas fa-arrow-to-left"></i> Back to Home</a>
+</div>

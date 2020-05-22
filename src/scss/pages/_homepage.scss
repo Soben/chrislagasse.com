@@ -1,0 +1,31 @@
+.container .main.tmpl-home {
+  padding: 0;
+
+  section {
+    padding: 3rem;
+  }
+
+  .two-col {
+    display: flex;
+    background-color: $light-blue;
+
+    section {
+      width: 50%;
+
+      &.bio {
+        background-color: $white;
+      }
+
+      &.blog-posts {
+        a,
+        a:visited {
+          color: $white;
+        }
+        a:hover,
+        a:focus {
+          color: $dark-blue;
+        }
+      }
+    }
+  }
+}

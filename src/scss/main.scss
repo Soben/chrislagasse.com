@@ -9,6 +9,7 @@
 }
 
 @import "_variables";
+@import "_mixins";
 @import "_layout";
 
 // Theme Colors and General Styling
@@ -55,4 +56,13 @@ code {
   background-color: $black;
 }
 
+// Common Elements
+.pagination {
+  margin-top: 3rem;
+}
+
+// Sections
 @import "sections/sidebar";
+
+// Pages
+@import "pages/homepage";

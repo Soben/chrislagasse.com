@@ -42,24 +42,20 @@
           </ul> #}
         </div>
       </aside>
-      <div class="main">
+      <div class="main {% if templateClass %}{{ templateClass }}{% endif %}">
         <div class="main__content">
-          <header>
-            <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-          </header>
-
-          <main class="wysiwyg  {% if templateClass %}{{ templateClass }}{% endif %}">
+          <main class="wysiwyg">
             {{ content | safe }}
           </main>
-
-          <footer>Footer Content.</footer>
         </div>
       </div>
     </div>
+
     {% if includeSyntaxHighlighter %}
       <script src="{{ '/js/vendor/highlight.js' | url }}"></script>
       <script>hljs.initHighlightingOnLoad();</script>
     {% endif %}
+
     <!-- Current page: {{ page.url | url }} -->
   </body>
 </html>
