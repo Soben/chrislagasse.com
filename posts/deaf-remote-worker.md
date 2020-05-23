@@ -49,4 +49,8 @@ If you're asking a question, or have something directed towards them, say their 
 
 ## Video is always better than audio-only
 
-- Ability to read lips.
+Whenever possible, be on camera.
+
+> I take an initiative to turn on my camera, which usually entices the rest of the team to turn on theirs as well.
+
+Being on camera lets us see your face, which means we can gain more insight as to the tone and intention of your words. Not to mention the ability to read your lips.
