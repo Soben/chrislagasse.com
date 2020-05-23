@@ -1,5 +1,5 @@
 ---
-layout: layouts/main.njk
+layout: layouts/page.njk
 permalink: /posts/
 eleventyNavigation:
   key: Archive
@@ -9,4 +9,4 @@ eleventyNavigation:
 <h1>Archive</h1>
 
 {% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+{% include "partials/postslist.njk" %}
