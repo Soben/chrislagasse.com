@@ -1,17 +1,49 @@
 .container .main.tmpl-home {
   padding: 0;
 
-  section {
-    padding: 3rem;
+  .section__inner {
+    padding: 1.5rem;
+
+    @media screen and (min-width: $mobile) {
+      padding: 3rem;
+    }
+  }
+
+  section.intro {
+    @include background(0.5);
+    h1 {
+      font-size: 3.5rem;
+      line-height: 4.3rem;
+
+      span {
+        color: $red;
+        display: block;
+        @media screen and (min-width: $desktop) {
+          display: inline;
+        }
+      }
+    }
+
+    h1,
+    p {
+      display: inline-block;
+      background-color: $white;
+      padding: 0.3rem 1rem;
+      border-radius: 1rem;
+    }
+
+    font-size: 1.7rem;
+
+    em {
+      color: $light-blue;
+      font-weight: bold;
+    }
   }
 
   .two-col {
-    display: flex;
     background-color: $light-blue;
 
     section {
-      width: 50%;
-
       &.bio {
         background-color: $white;
       }
@@ -25,6 +57,13 @@
         a:focus {
           color: $dark-blue;
         }
+      }
+    }
+
+    @media screen and (min-width: $mobile) {
+      display: flex;
+      section {
+        width: 50%;
       }
     }
   }

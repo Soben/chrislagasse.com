@@ -6,6 +6,7 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="icon" href="{{ '/img/favicon.png' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <script src="https://kit.fontawesome.com/d5ace7fa38.js" crossorigin="anonymous" defer></script>
   </head>
