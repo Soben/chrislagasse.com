@@ -13,60 +13,70 @@ So here's mine, in no particular order:
 
 ## Software
 
-- Visual Studio Code
-- Alfred
-- Dash
-- 1Password
-- Brave
-- Keybase
-- iTerm
-- Bear
-- Affinity Designer/Photos
-- Transmit
-- Todoist
-- Sequel Pro
-- CloudApp
-- Numi
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Alfred](https://www.alfredapp.com/)
+- [Dash](https://kapeli.com/dash)
+- [1Password](https://1password.com/)
+- [Brave](https://brave.com/)
+- [Keybase](https://keybase.io)
+- [iTerm 2](https://iterm2.com/)
+- [Bear](https://bear.app/)
+- [Affinity Designer/Photos](https://affinity.serif.com/)
+- [Transmit](https://www.panic.com/transmit/)
+- [Todoist](https://todoist.com/)
+- [Sequel Pro](https://sequelpro.com/) (Nightlies)
+- [CloudApp](https://www.getcloudapp.com/)
+- [Numi](https://numi.app/)
 
 ## Hardware
 
 - iPhone XS
 - Macbook Pro (2017)
-- AKG K361 Headphones
-- Code Keyboards with Cherry MX Browns
-- Timeular
+- [AKG K361](https://www.akg.com/Headphones/Professional%20Headphones/K361-.html) Headphones
+- [Code Keyboard](http://codekeyboards.com/) with Cherry MX Browns
+- [Timeular](https://timeular.com/)
 - Apple Magic Mouse
-- Raspberry Pi
+- [Raspberry Pi](https://www.raspberrypi.org/)
+
+## Websites/Services
+
+- [Duck Duck Go](https://duckduckgo.com/)
+- [Pure VPN](https://www.purevpn.com/)
 
 ## Development Tools
 
-- zsh
-- git
+- [zsh](https://ohmyz.sh/)
+- [git](https://git-scm.com/)
+- [homebrew](https://brew.sh/)
+- [Mocha](https://mochajs.org/)
 
-## Frameworks/Languages/Hosting
+## Frameworks/Languages
 
-- Vue
-- PHP
-- Wordpress
-- Sass
-- Node
-- Express
-- Vercel
-- Digital Ocean
-- Netlify
-- GraphQL
-- Firebase
+- [Vue](https://vuejs.org/)
+- [PHP](https://www.php.net/)
+- [Wordpress](https://wordpress.org)
+- [Sass](https://sass-lang.com/)
+- [Node](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [GraphQL](https://graphql.org/)
+
+## Hosting
+
+- [Vercel](https://vercel.com/)
+- [Digital Ocean](https://digitalocean.com)
+- [Netlify](https://netlify.com)
+- [Firebase](https://firebase.google.com/)
 
 ## Personal Website Stack
 
 - Vercel
-- Eleventy
-- Google Fonts (Kadwa, Roboto, Open Source pro)
-- Font Awesome
-- Hero Patterns
-- Highlight.js
-- Wysiwyg.css
-- Eric Meyer Reset 2.0
+- [Eleventy](https://www.11ty.dev/)
+- [Google Fonts](https://fonts.google.com) (Kadwa, Roboto, Open Source pro)
+- [Font Awesome](https://fontawesome.com)
+- [Hero Patterns](https://www.heropatterns.com/)
+- [Highlight.js](https://highlightjs.org/)
+- [Wysiwyg.css](https://jgthms.com/wysiwyg.css/)
+- [Eric Meyer Reset 2.0](https://cssreset.com/scripts/eric-meyer-reset-css/)
 
 ![Neofetch Computer Stats](/img/neofetch.png "a screenshot of terminal output showcasing my computer's stats from the terminal command 'neofetch'")
 
