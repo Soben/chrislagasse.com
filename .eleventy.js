@@ -38,6 +38,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/img": "img"});
   eleventyConfig.addPassthroughCopy({"src/css": "css"});
   eleventyConfig.addPassthroughCopy({"src/js": "js"});
+  eleventyConfig.addPassthroughCopy({"src/root/robots.txt": "robots.txt"});
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({

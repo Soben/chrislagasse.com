@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="icon" href="{{ '/img/favicon.png' | url }}">
 
+    <!-- Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/d5ace7fa38.js" crossorigin="anonymous" defer></script>
+    <script preload src="https://kit.fontawesome.com/d5ace7fa38.js" crossorigin="anonymous" defer></script>
 
     <!-- Google Analytics -->
     <script>
@@ -31,19 +36,19 @@
             <span>Chris Lagasse</span>
           </div>
           <div class="icons">
-            <a href="https://github.com/soben" rel="me" target="_blank">
+            <a href="https://github.com/soben" rel="noopener" target="_blank" aria-label="Github">
               <i class="fab fa-github-square" alt="github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/chris-lagasse" rel="me" target="_blank">
+            <a href="https://www.linkedin.com/in/chris-lagasse" rel="noopener" target="_blank" aria-label="Linkedin">
               <i class="fab fa-linkedin" alt="linkedin"></i>
             </a>
-            <a href="https://www.instagram.com/soben" rel="me" target="_blank">
+            <a href="https://www.instagram.com/soben" rel="noopener" target="_blank" aria-label="Instagram">
               <i class="fab fa-instagram" alt="instagram"></i>
             </a>
-            <a href="https://twitter.com/soben" rel="me" target="_blank">
+            <a href="https://twitter.com/soben" rel="noopener" target="_blank" aria-label="Twitter">
               <i class="fab fa-twitter-square" alt="twitter"></i>
             </a>
-            <a href="mailto:chrislagasse@protonmail.com">
+            <a href="mailto:chrislagasse@protonmail.com" aria-label="E-Mail">
               <i class="fas fa-envelope-square" alt="email"></i>
             </a>
           </div>

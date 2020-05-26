@@ -35,16 +35,18 @@
     font-size: 1.7rem;
 
     em {
-      color: $light-blue;
+      color: darken($light-blue, 15%);
       font-weight: bold;
     }
   }
 
   .two-col {
-    background-color: $light-blue;
+    background-color: darken($light-blue, 15%);
+    color: $white;
 
     section {
       &.bio {
+        color: $dark-blue;
         background-color: $white;
       }
 
