@@ -41,8 +41,8 @@
   }
 
   .two-col {
-    background-color: darken($light-blue, 15%);
-    color: $white;
+    background-color: lighten($light-blue, 20%);
+    color: $black;
 
     section {
       &.bio {
@@ -53,11 +53,11 @@
       &.blog-posts {
         a,
         a:visited {
-          color: $white;
+          color: $dark-blue;
         }
         a:hover,
         a:focus {
-          color: $dark-blue;
+          color: $red;
         }
       }
     }
