@@ -11,7 +11,7 @@ layout: layouts/post.njk
 
 **Last Updated July 17th 2020**
 
-As the global COVID-19 pandemic continues to rage across the world, especially across the United States (and my home state of Florida), I regularly see articles about anti-mask activists, like [the ones recently dominating a county meeting in Utah](https://www.sltrib.com/news/education/2020/07/15/packed-meeting-utah/). I've been thinking about what wearing a mask (or the mandates requiring them) mean to these individuals, and what we can do to encourage mask usage.
+As the global COVID-19 pandemic continues to rage across the world, especially across the United States (and my home state of Florida), I regularly see articles about anti-mask activists, like [the ones recently dominating a county meeting in Utah](https://www.sltrib.com/news/education/2020/07/15/packed-meeting-utah/). I've been thinking about what wearing a mask (or the mandates requiring masks) means to these individuals, and what we can do to encourage mask usage.
 
 The science has shown that wearing a cloth mask, combined with social distancing, sanitizing, disinfecting, and washing your hands regularly, can help reduce the risk and spread of disease and sickness, not just COVID-19. Even the [Centers for Disease Control](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html) recommends all of these. Countries like Japan, which have strong social constructs, already have plenty of citizens who wear masks when they're sick, or trying to prevent getting sick, when they're in public. Doctors and nurses wear masks to prevent getting sick, or getting their patients sick, when performing surgeries.
 
@@ -29,7 +29,7 @@ Wearing a mask is the next logical step that honestly, we should've been doing a
 
 ## Challenges
 
-But I also get it. American individualism is a powerful ideal, and it has become a massive political dividing line. It essentially comes down to those who care about other people and want to keep everyone safe... and those who don't. It sounds harsh, but the excuses against wearing a mask all fall due to faux science, pundit fearmongering, or the idea that COVID-19 is a hoax ([until someone you personally know gets infected](https://www.chicagotribune.com/entertainment/ny-coronavirus-chuck-woolery-20200717-gohmcyb7czhxtkbgvumsmh7an4-story.html)).
+But I also get it. American individualism is a powerful ideal. We don't want to be told what to do. Unfortunately, it has become a massive political dividing line. And now, it essentially comes down to those who care about other people and want to keep everyone safe... and those who don't. It sounds harsh, but the excuses against wearing a mask all fall due to faux science, pundit fearmongering, or the idea that COVID-19 is a hoax ([until someone you personally know gets infected](https://www.chicagotribune.com/entertainment/ny-coronavirus-chuck-woolery-20200717-gohmcyb7czhxtkbgvumsmh7an4-story.html)).
 
 ### "It's just a flu"
 
