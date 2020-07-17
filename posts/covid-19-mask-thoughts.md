@@ -41,11 +41,11 @@ Then wear one for the good of society. If you just did this to begin with, a man
 
 ### "It's a hoax"
 
-If anything, its dangers might've been exaggerated. But we have enough dangerous diseases, and if we don't contain them early on, they'll become permanent fixtures in our society, forever causing harm to our survival and life expectancy. The problem with advanced notice is that if we do our job and contain it early, it comes across as fear-mongering.
+If anything, its dangers might've been exaggerated. But we have enough dangerous diseases, and if we don't contain them early on, they'll become permanent fixtures in our society, forever causing harm to our survival and life expectancy. The problem with advanced notice is that if we do our job and contain it early, it comes across as over-exaggerating and fearmongering.
 
 We see this in Florida every year with hurricanes. They can cause a LOT Of damage and kill a lot of people. We should be prepared, maybe even evacuate. But if that storm goes a different way, makes landfall sooner/later than expected, it was "fake news" or a "hoax"... We don't take steps to be prepared unless we're afraid. Media and our politicians tap into that, to force us into action. But that doesn't mean we shouldn't be prepared. We must be.
 
-The same applies to COVID-19, or the next pandemic. Or tornadoes, hurricans, or a [zombie outbreak](https://www.cdc.gov/cpr/zombie/index.htm). We need to be prepared to do what we can to keep them under control. If we did this of our own volition, we wouldn't need the fear.
+The same applies to COVID-19 or the next pandemic. Or tornadoes, hurricanes, or a [zombie outbreak](https://www.cdc.gov/cpr/zombie/index.htm). We need to be prepared to do what we can to keep them under control. To be safe, and healthy. If we did this of our own volition, we wouldn't need the fear.
 
 ### "A mask is blocking oxygen" or "increases carbon dioxide"
 
