@@ -16,9 +16,6 @@
     <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
     <link rel="preconnect" href="https://plausible.io" crossorigin />
 
-    <!-- Font Awesome -->
-    <script preload src="https://kit.fontawesome.com/d5ace7fa38.js" crossorigin="anonymous" defer></script>
-
     <!-- Analytics -->
     {% if site.environment === 'production' %}
     <script async defer data-domain="chrislagasse.com" src="https://plausible.io/js/plausible.js"></script>
@@ -73,6 +70,9 @@
       <script src="{{ '/js/vendor/highlight.js' | url }}"></script>
       <script>hljs.initHighlightingOnLoad();</script>
     {% endif %}
+
+    <!-- Font Awesome -->
+    <script async src="https://kit.fontawesome.com/d5ace7fa38.js" crossorigin="anonymous" defer></script>
 
     <!-- Current Page: {{ page.url | url }} -->
     <!-- Environment: {{ site.environment }} -->
