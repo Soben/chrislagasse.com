@@ -9,6 +9,13 @@
     }
   }
 
+  .postlist-item {
+    margin-bottom: 0.5rem;
+    .postlist-link {
+      padding: 0.5rem 0 0.1875rem;
+    }
+  }
+
   section.intro {
     @include background(0.5);
     h1 {
