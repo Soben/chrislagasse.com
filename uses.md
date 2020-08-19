@@ -1,8 +1,5 @@
 ---
 layout: layouts/page.njk
-eleventyNavigation:
-  key: Uses
-  order: 3
 ---
 
 # Uses
