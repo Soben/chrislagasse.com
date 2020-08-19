@@ -15,9 +15,13 @@
 .icons {
   padding-top: $default-spacing;
   text-align: center;
-  font-size: 2.75rem;
+  font-size: 2.3rem;
   a {
     text-decoration: none;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 2.75rem;
   }
 }
 
