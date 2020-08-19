@@ -14,15 +14,21 @@
     <!-- Preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
+    <link rel="preconnect" href="https://plausible.io" crossorigin />
 
     <!-- Font Awesome -->
     <script preload src="https://kit.fontawesome.com/d5ace7fa38.js" crossorigin="anonymous" defer></script>
 
+    <!-- Analytics -->
+    {% if site.environment === 'production' %}
+    <script async defer data-domain="chrislagasse.com" src="https://plausible.io/js/plausible.js"></script>
+    {% endif %}
+
     <!-- Styles -->
     {% if site.environment === 'production' %}
-      <!-- INLINE CSS-->
+    <!-- INLINE CSS-->
     {% else %}
-      <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     {% endif %}
   </head>
   <body>
