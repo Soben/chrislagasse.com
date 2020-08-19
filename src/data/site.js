@@ -1,4 +1,4 @@
-let environment = "production";
+let environment = "development";
 if (process.env.ELEVENTY_ENV) {
   environment = process.env.ELEVENTY_ENV;
 }

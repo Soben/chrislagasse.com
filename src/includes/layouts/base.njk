@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
+
+    <!-- SEO -->
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
 
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <!-- Icons -->
     <link rel="icon" href="{{ '/img/favicon.png' | url }}">
 
     <!-- Preload -->
@@ -15,6 +17,13 @@
 
     <!-- Font Awesome -->
     <script preload src="https://kit.fontawesome.com/d5ace7fa38.js" crossorigin="anonymous" defer></script>
+
+    <!-- Styles -->
+    {% if site.environment === 'production' %}
+      <!-- INLINE CSS-->
+    {% else %}
+      <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    {% endif %}
   </head>
   <body>
     <div class="container">
