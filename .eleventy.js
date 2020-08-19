@@ -1,14 +1,14 @@
 const fs = require("fs");
-require('dotenv').config()
+require("dotenv").config()
 
-const { PurgeCSS } = require('purgecss');
+const { PurgeCSS } = require("purgecss");
 // const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
 const isProduction = function() {
   if (!process.env.ELEVENTY_ENV) {
-    return 'development';
+    return "development";
   }
 
   return process.env.ELEVENTY_ENV;
@@ -51,7 +51,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404.html');
+        const content_404 = fs.readFileSync("_site/404.html");
 
         browserSync.addMiddleware("*", (req, res) => {
           // Provides the 404 content without redirect.
@@ -64,18 +64,18 @@ module.exports = function(eleventyConfig) {
     ghostMode: false
   });
 
-  eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
-    if (!isProduction() || !outputPath.endsWith('.html')) {
+  eleventyConfig.addTransform("purge-and-inline-css", async (content, outputPath) => {
+    if (!isProduction() || !outputPath.endsWith(".html")) {
       return content;
     }
 
     const purgeCSSResults = await new PurgeCSS().purge({
       content: [{ raw: content }],
-      css: ['_site/css/index.css'],
+      css: ["_site/css/index.css"],
       keyframes: true,
     });
 
-    return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
+    return content.replace("<!-- INLINE CSS-->", "<style>" + purgeCSSResults[0].css + "</style>");
   });
 
   return {
