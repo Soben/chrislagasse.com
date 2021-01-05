@@ -39,9 +39,9 @@ Makes 4
 	* Water should be salty light-ish brown.
 3. While boiling, chop up potatoes to "home fry" size /(1 inch max?)/
 4. Once meat is boiled, add potatoes to pot. Cook until potatoes are very soft.
-4. Turn off stove, mash heavily, and *cool down*
+5. Turn off stove, mash heavily, and *cool down*
 
-## Round 2
+### Round 2
 
 1. Preheat oven to 425ºF
 2. Make pies.
