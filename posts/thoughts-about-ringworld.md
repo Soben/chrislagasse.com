@@ -4,8 +4,8 @@ description: Ringworld has triggered several thoughts that my brain did not want
 date: 2023-02-19
 tags:
   - science-fiction
-	- hugo-award-winner
-	- book-review
+  - hugo-award-winner
+  - book-review
 layout: layouts/post.njk
 ---
 
@@ -56,7 +56,5 @@ I'm hopeful the next books in the series would cover some of these questions, bu
 Even with all of these flaws, I loved the book. I do get the feeling that my wife would have a harder time with the female characters, to the point where I am not sure I would recommend it to her.
 
 I will definitely add the next books to my 'To Read' list, and I'm curious where Niven takes the story next.
-
----
 
 This review is part of my goal of reading every Hugo Award-winning novel, which I'm tracking my progress over at https://hugo.chrislagasse.com
