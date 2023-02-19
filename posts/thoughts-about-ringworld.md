@@ -45,11 +45,11 @@ The "Outsiders" are so mysterious, I really need more information on them. I had
 
 ### The Location
 
-This is where I wish the book took the approach of being less speculative in the eyes of unaware visitors. I would've loved some more insight as to the science behind the Ringworld, about the society that built it. What the actual scenarios were that led to their downfall. Was it always inevitable? If a society could suddenly become so spread out in which they'd never encounter each other again, even on the same "planet." How easy would it be to become "barbarian" again, even without the accidental introduction of dangerous bacterium?
+This is where I wish the book took the approach of being less speculative in the eyes of unaware visitors. I would've loved some more insight as to the science behind the Ringworld, about the society that built it. What the actual scenarios were that led to their downfall. Was it always inevitable? If a society could suddenly become so spread out in which they'd never encounter each other again, even on the same "planet," how easy would it be to become "barbarian" again, even without the accidental introduction of dangerous bacterium?
 
-What about the theory that Earth and its nearby systems being "Seeded" by Ringworld Engineers? How, if the Engineers were so human-like in appearance, that Humans on Earth had to "evolve" from Apes?
+What about the theory that Earth and its nearby systems being "Seeded" by Ringworld Engineers? How, if the Engineers were so human-like in appearance, that Humans on Earth had to "evolve" from Apes? It seems it'd be more likely that they too were also former Engineers turned barbarian and then become modern humans, but not only Louis, and also Nessus, seem to have concluded otherwise.
 
-I'm hopeful the next books in the series would cover some of these questions, but if the books stay in the perspective of a single individual, and not enough time passes... I doubt that will be the case.
+I'm hopeful the next books in the series would cover some of these questions, but if the books stay in the perspective of a single individual, and not enough time passes... I doubt that will be the case. The next book is 'The Ringworld Engineers' so perhaps it's more of a prequel?
 
 ### Conclusion
 
