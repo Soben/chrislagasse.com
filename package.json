@@ -1,7 +1,7 @@
 {
   "name": "chrislagasse.com",
   "version": "1.0.0",
-  "description": "Personal website for Chris Lagasse, using the 11ty base by Zach Leatherman",
+  "description": "Personal website of Chris Lagasse",
   "scripts": {
     "build": "npm run sass && eleventy",
     "watch": "npm-run-all sass --parallel watch:*",
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/soben/chrislagasse.com#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "dotenv": "^8.2.0",
     "markdown-it": "^12.3.2",
