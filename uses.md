@@ -14,7 +14,7 @@ So here's mine, in no particular order:
 - [Alfred](https://www.alfredapp.com/)
 - [Dash](https://kapeli.com/dash)
 - [1Password](https://1password.com/)
-- [Brave](https://brave.com/)
+- [Arc](https://arc.net/)
 - [Keybase](https://keybase.io)
 - [iTerm 2](https://iterm2.com/)
 - [Bear](https://bear.app/)
@@ -30,7 +30,7 @@ So here's mine, in no particular order:
 - iPhone XS
 - Macbook Pro (2017)
 - [AKG K361](https://www.akg.com/Headphones/Professional%20Headphones/K361-.html) Headphones
-- [Code Keyboard](http://codekeyboards.com/) with Cherry MX Browns
+- [Keychron K10](https://www.keychron.com/collections/normal-profile-keyboards/products/keychron-k10-wireless-mechanical-keyboard?variant=39426676293721) RGB Hotswappable with Gateron Brown
 - [Timeular](https://timeular.com/)
 - Apple Magic Mouse
 - [Raspberry Pi](https://www.raspberrypi.org/)
@@ -51,7 +51,7 @@ So here's mine, in no particular order:
 
 - [Vue](https://vuejs.org/)
 - [PHP](https://www.php.net/)
-- [Wordpress](https://wordpress.org)
+- [WordPress](https://wordpress.org)
 - [Sass](https://sass-lang.com/)
 - [Node](https://nodejs.org/)
 - [Express](https://expressjs.com/)
@@ -61,6 +61,7 @@ So here's mine, in no particular order:
 
 - [Vercel](https://vercel.com/)
 - [Digital Ocean](https://digitalocean.com)
+- [Fly.io](https://fly.io/)
 - [Netlify](https://netlify.com)
 - [Firebase](https://firebase.google.com/)
 
