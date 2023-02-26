@@ -2,7 +2,7 @@ const fs = require("fs");
 require("dotenv").config()
 
 const { PurgeCSS } = require("purgecss");
-// const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
@@ -15,7 +15,7 @@ const isProduction = function() {
 }
 
 module.exports = function(eleventyConfig) {
-  // eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   eleventyConfig.setDataDeepMerge(true);
 

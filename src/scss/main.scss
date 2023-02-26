@@ -51,13 +51,11 @@ body {
   background-color: rgba($white, 0.5);
 }
 
-// Code Highlighting Overrides
-pre,
-code {
-  font-family: $monospace;
-}
-.hljs {
+// // Code Highlighting Overrides
+pre {
   background-color: $black;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
 }
 
 // Common Elements

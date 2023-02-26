@@ -1,99 +1,275 @@
-/*
+pre[class*="language-"],
+code[class*="language-"] {
+	color: #d4d4d4;
+	font-size: 13px;
+	text-shadow: none;
+	font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
 
-Atom One Dark With support for ReasonML by Gidi Morris, based off work by Daniel Gamage
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+pre[class*="language-"] *::selection,
+code[class*="language-"] *::selection {
+	text-shadow: none;
+	background: #264F78;
+}
 
-Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+@media print {
+	pre[class*="language-"],
+	code[class*="language-"] {
+		text-shadow: none;
+	}
+}
 
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	background: #1e1e1e;
+}
+
+:not(pre) > code[class*="language-"] {
+	padding: .1em .3em;
+	border-radius: .3em;
+	color: #db4c69;
+	background: #1e1e1e;
+}
+/*********************************************************
+* Tokens
 */
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1em;
-  color: #abb2bf;
-  background: #282c34;
+.namespace {
+	opacity: .7;
 }
-.hljs-keyword,
-.hljs-operator {
-  color: #f92672;
+
+.token.doctype .token.doctype-tag {
+	color: #569CD6;
 }
-.hljs-pattern-match {
-  color: #f92672;
+
+.token.doctype .token.name {
+	color: #9cdcfe;
 }
-.hljs-pattern-match .hljs-constructor {
-  color: #61aeee;
+
+.token.comment,
+.token.prolog {
+	color: #6a9955;
 }
-.hljs-function {
-  color: #61aeee;
+
+.token.punctuation,
+.language-html .language-css .token.punctuation,
+.language-html .language-javascript .token.punctuation {
+	color: #d4d4d4;
 }
-.hljs-function .hljs-params {
-  color: #a6e22e;
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.inserted,
+.token.unit {
+	color: #b5cea8;
 }
-.hljs-function .hljs-params .hljs-typing {
-  color: #fd971f;
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.deleted {
+	color: #ce9178;
 }
-.hljs-module-access .hljs-module {
-  color: #7e57c2;
+
+.language-css .token.string.url {
+	text-decoration: underline;
 }
-.hljs-constructor {
-  color: #e2b93d;
+
+.token.operator,
+.token.entity {
+	color: #d4d4d4;
 }
-.hljs-constructor .hljs-string {
-  color: #9ccc65;
+
+.token.operator.arrow {
+	color: #569CD6;
 }
-.hljs-comment,
-.hljs-quote {
-  color: #b18eb1;
-  font-style: italic;
+
+.token.atrule {
+	color: #ce9178;
 }
-.hljs-doctag,
-.hljs-formula {
-  color: #c678dd;
+
+.token.atrule .token.rule {
+	color: #c586c0;
 }
-.hljs-section,
-.hljs-name,
-.hljs-selector-tag,
-.hljs-deletion,
-.hljs-subst {
-  color: #e06c75;
+
+.token.atrule .token.url {
+	color: #9cdcfe;
 }
-.hljs-literal {
-  color: #56b6c2;
+
+.token.atrule .token.url .token.function {
+	color: #dcdcaa;
 }
-.hljs-string,
-.hljs-regexp,
-.hljs-addition,
-.hljs-attribute,
-.hljs-meta-string {
-  color: #98c379;
+
+.token.atrule .token.url .token.punctuation {
+	color: #d4d4d4;
 }
-.hljs-built_in,
-.hljs-class .hljs-title {
-  color: #e6c07b;
+
+.token.keyword {
+	color: #569CD6;
 }
-.hljs-attr,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-type,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-number {
-  color: #d19a66;
+
+.token.keyword.module,
+.token.keyword.control-flow {
+	color: #c586c0;
 }
-.hljs-symbol,
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
-.hljs-title {
-  color: #61aeee;
+
+.token.function,
+.token.function .token.maybe-class-name {
+	color: #dcdcaa;
 }
-.hljs-emphasis {
-  font-style: italic;
+
+.token.regex {
+	color: #d16969;
 }
-.hljs-strong {
-  font-weight: bold;
+
+.token.important {
+	color: #569cd6;
 }
-.hljs-link {
-  text-decoration: underline;
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.constant {
+	color: #9cdcfe;
+}
+
+.token.class-name,
+.token.maybe-class-name {
+	color: #4ec9b0;
+}
+
+.token.console {
+	color: #9cdcfe;
+}
+
+.token.parameter {
+	color: #9cdcfe;
+}
+
+.token.interpolation {
+	color: #9cdcfe;
+}
+
+.token.punctuation.interpolation-punctuation {
+	color: #569cd6;
+}
+
+.token.boolean {
+	color: #569cd6;
+}
+
+.token.property,
+.token.variable,
+.token.imports .token.maybe-class-name,
+.token.exports .token.maybe-class-name {
+	color: #9cdcfe;
+}
+
+.token.selector {
+	color: #d7ba7d;
+}
+
+.token.escape {
+	color: #d7ba7d;
+}
+
+.token.tag {
+	color: #569cd6;
+}
+
+.token.tag .token.punctuation {
+	color: #808080;
+}
+
+.token.cdata {
+	color: #808080;
+}
+
+.token.attr-name {
+	color: #9cdcfe;
+}
+
+.token.attr-value,
+.token.attr-value .token.punctuation {
+	color: #ce9178;
+}
+
+.token.attr-value .token.punctuation.attr-equals {
+	color: #d4d4d4;
+}
+
+.token.entity {
+	color: #569cd6;
+}
+
+.token.namespace {
+	color: #4ec9b0;
+}
+/*********************************************************
+* Language Specific
+*/
+
+pre[class*="language-javascript"],
+code[class*="language-javascript"],
+pre[class*="language-jsx"],
+code[class*="language-jsx"],
+pre[class*="language-typescript"],
+code[class*="language-typescript"],
+pre[class*="language-tsx"],
+code[class*="language-tsx"] {
+	color: #9cdcfe;
+}
+
+pre[class*="language-css"],
+code[class*="language-css"] {
+	color: #ce9178;
+}
+
+pre[class*="language-html"],
+code[class*="language-html"] {
+	color: #d4d4d4;
+}
+
+.language-regex .token.anchor {
+	color: #dcdcaa;
+}
+
+.language-html .token.punctuation {
+	color: #808080;
+}
+/*********************************************************
+* Line highlighting
+*/
+pre[class*="language-"] > code[class*="language-"] {
+	position: relative;
+	z-index: 1;
+}
+
+.line-highlight.line-highlight {
+	background: #f7ebc6;
+	box-shadow: inset 5px 0 0 #f7d87c;
+	z-index: 0;
 }
