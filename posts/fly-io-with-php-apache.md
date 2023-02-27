@@ -1,6 +1,6 @@
 ---
 title: Using SlimPHP on Fly.io
-description: Learned this meat pie recipe from my grandmother
+description: Streamlined solution to Dockerfile-only approach to get a SlimPHP site on fly.io
 date: 2023-02-26
 tags:
   - slimphp
@@ -11,7 +11,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-I've built a new project recently on SlimPHP and it was time to find hosting. I had a strong desire to stick with `serverless`-esque hosting, such as Vercel (my current provider of choice), but their third-party PHP support was... lacking.
+I've built a new project recently on SlimPHP and it was time to find hosting. I had a strong desire to stick with serverless-esque hosting, such as Vercel (my current provider of choice), but their third-party PHP support was... lacking.
 
 That's when I discovered [fly.io](https://fly.io). My hopes were initially dashed as it seemed that I needed to use Docker. Locally I was sufficient with 'just' using `php --serve`, and I wanted to keep my requirements as minimal as possible.
 
@@ -97,12 +97,12 @@ A helpful configuration that has your 'root' working directory in the same direc
 EXPOSE 8080
 ```
 
-Since we're not using `:80` for our working port, we need to tell Apache to make `:8080` available.
+Since we're not using `:80` for our working port, we need to tell the container to make `:8080` available.
 
 ## Conclusions
 
-We'll see. I only successfully set this up today, but my site is hosted on Fly.io.
+We'll see. I don't know how the site will perform on Fly.io yet, or what the costs will be for continued hosting, but it's successfully hosted and rendering on Fly.io.
 
-I had the added benefit of not needing any write ability on this project. I'm using SQLite, but in a read-only capacity. The database is compiled separately and stored statically in the database. I don't know how the site will perform on Fly.io yet, or what the costs will be for continued hosting.
+I had the added benefit of not needing any write ability on this project. I'm using SQLite, but in a read-only capacity. The database is compiled separately and stored statically in the database. 
 
 **Hope this helps you**. It was quite difficult to find sufficient resources regarding PHP and these serverless environments, especially from a more barebones approach like I wanted.

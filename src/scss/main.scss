@@ -51,7 +51,17 @@ body {
   background-color: rgba($white, 0.5);
 }
 
-// // Code Highlighting Overrides
+.wysiwyg p code {
+  background-color: $black;
+  display: inline-block;
+  color: $light-blue;
+  font-family: $monospace;
+  border-radius: 3px;
+  padding: 0.1em 0.4em 0.2em;
+  vertical-align: baseline;
+}
+
+// Code Highlighting Overrides
 pre {
   background-color: $black;
   border-radius: 0.25rem;
