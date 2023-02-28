@@ -27,6 +27,8 @@ RUN apt update \
     && docker-php-ext-configure zip \
     && docker-php-ext-install zip
 
+RUN a2enmod rewrite
+
 RUN sed -ri -e 's!:80>!:8080>!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!Listen 80!Listen 8080!g' /etc/apache2/ports.conf
 
@@ -58,14 +60,20 @@ RUN apt update \
     && docker-php-ext-install zip
 ```
 
-This container uses Unix, and `zip` was required for composer. This is where you'd include any other packages that your project needs, either by adding it to this `RUN` command, or adding others in sequence (my preference for readability)
+`zip` was required for composer. This tells the container to install and configure `zip` as a PHP extension.
+
+```docker
+RUN a2enmod rewrite
+```
+
+I use an `.htaccess` file in my `/public` folder, and this tells apache to pay attention to it. Apache already has `AllowOverride All` for the appropriate folders, but it still needs the rewrite module enabled.
 
 ```docker
 RUN sed -ri -e 's!:80>!:8080>!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!Listen 80!Listen 8080!g' /etc/apache2/ports.conf
 ```
 
-`fly.io` has an 'internal' port that defaults to `8080` that it checks for to communicate with the container. The container has a proxy communicating with it, so `:80` and `:443` are not necessary here, and we need to have the site running off of `:8080`. This can be any port, but I stuck with the default for ease of setup.
+`Fly.io` has an 'internal' port that defaults to `:8080` that it plans to use to communicate with the container. This can be any port, but I stuck with the default for ease of setup.
 
 ```docker
 COPY --chown=www-data . /var/www/html
@@ -85,7 +93,7 @@ RUN sed -ri -e 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-avail
 RUN sed -ri -e 's!/var/www/html!/var/www/html/public!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 ```
 
-Tells Apache to use the `/public` folder as the site root instead of `/html`
+These two lines are regex and it tells Apache to use the `/public` folder as the site root instead of `/html`
 
 ```docker
 WORKDIR /var/www/html
