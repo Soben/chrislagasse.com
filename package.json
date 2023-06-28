@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Personal website of Chris Lagasse",
   "scripts": {
-    "build": "sass && eleventy",
-    "watch": "eleventy --serve --watch & sass -- watch",
-    "debug": "DEBUG=* eleventy --serve --watch",
-    "sass": "sass --style=compressed src/scss/main.scss src/css/index.css"
+    "build": "sass --style=compressed src/scss/main.scss src/css/index.css && eleventy",
+    "watch": "eleventy --serve --watch & sass --watch --style=compressed src/scss/main.scss src/css/index.css",
+    "debug": "DEBUG=* eleventy --serve --watch"
   },
   "repository": {
     "type": "git",
@@ -29,6 +28,7 @@
     "dotenv": "^16.3.1",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",
+    "npm-run-all": "^4.1.5",
     "purgecss": "^5.0.0",
     "sass": "^1.26.5"
   }
