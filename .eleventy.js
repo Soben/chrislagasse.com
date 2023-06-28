@@ -45,7 +45,6 @@ module.exports = function(eleventyConfig) {
   }).use(markdownItAnchor, {
     permalink: markdownItAnchor.permalink.linkInsideHeader({
       class: "direct-link",
-      placement: "before",
     }),
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
