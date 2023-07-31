@@ -1,11 +1,14 @@
 const fs = require("fs");
 require("dotenv").config()
 
-const { PurgeCSS } = require("purgecss");
+// const { PurgeCSS } = require("purgecss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+
+const Image = require("@11ty/eleventy-img");
+const path = require('path');
 
 const isProduction = function() {
   if (!process.env.ELEVENTY_ENV) {
@@ -66,19 +69,48 @@ module.exports = function(eleventyConfig) {
     ghostMode: false
   });
 
-  eleventyConfig.addTransform("purge-and-inline-css", async (content, outputPath) => {
-    if (!isProduction() || !outputPath.endsWith(".html")) {
-      return content;
-    }
+	eleventyConfig.addShortcode("image", function (src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
+		console.log(`Generating image(s) from:  ${src}`)
+		let options = {
+			widths: [600, 900, 1500],
+			formats: ["webp", "jpeg"],
+			urlPath: "/images/",
+			outputDir: "./_site/images/",
+			filenameFormat: function (id, src, width, format, options) {
+				const extension = path.extname(src)
+				const name = path.basename(src, extension)
+				return `${name}-${width}w.${format}`
+			}
+		}
 
-    const purgeCSSResults = await new PurgeCSS().purge({
-      content: [{ raw: content }],
-      css: ["_site/css/index.css"],
-      keyframes: true,
-    });
+		// generate images
+		Image(src, options)
 
-    return content.replace("<!-- INLINE CSS-->", "<style>" + purgeCSSResults[0].css + "</style>");
-  });
+		let imageAttributes = {
+			alt,
+			sizes,
+			loading: "lazy",
+			decoding: "async",
+		}
+		// get metadata
+		metadata = Image.statsSync(src, options)
+		return Image.generateHTML(metadata, imageAttributes)
+	})
+
+  // @TODO determine why this is now throwing errors
+  // eleventyConfig.addTransform("purge-and-inline-css", async (content, outputPath) => {
+  //   if (!isProduction() || !outputPath.endsWith(".html")) {
+  //     return content;
+  //   }
+
+  //   const purgeCSSResults = await new PurgeCSS().purge({
+  //     content: [{ raw: content }],
+  //     css: ["_site/css/index.css"],
+  //     keyframes: true,
+  //   });
+
+  //   return content.replace("<!-- INLINE CSS-->", "<style>" + purgeCSSResults[0].css + "</style>");
+  // });
 
   return {
     templateFormats: [
