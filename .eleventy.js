@@ -98,19 +98,19 @@ module.exports = function(eleventyConfig) {
 	})
 
   // @TODO determine why this is now throwing errors
-  // eleventyConfig.addTransform("purge-and-inline-css", async (content, outputPath) => {
-  //   if (!isProduction() || !outputPath.endsWith(".html")) {
-  //     return content;
-  //   }
+  eleventyConfig.addTransform("purge-and-inline-css", async (content, outputPath) => {
+    if (!isProduction() || !outputPath.endsWith(".html")) {
+      return content;
+    }
 
-  //   const purgeCSSResults = await new PurgeCSS().purge({
-  //     content: [{ raw: content }],
-  //     css: ["_site/css/index.css"],
-  //     keyframes: true,
-  //   });
+    const purgeCSSResults = await new PurgeCSS().purge({
+      content: [{ raw: content }],
+      css: ["_site/css/index.css"],
+      keyframes: true,
+    });
 
-  //   return content.replace("<!-- INLINE CSS-->", "<style>" + purgeCSSResults[0].css + "</style>");
-  // });
+    return content.replace("<!-- INLINE CSS-->", "<style>" + purgeCSSResults[0].css + "</style>");
+  });
 
   return {
     templateFormats: [
