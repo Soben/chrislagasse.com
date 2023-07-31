@@ -1,7 +1,7 @@
 const fs = require("fs");
 require("dotenv").config()
 
-// const { PurgeCSS } = require("purgecss");
+const { PurgeCSS } = require("purgecss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const markdownIt = require("markdown-it");
