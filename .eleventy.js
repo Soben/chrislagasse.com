@@ -12,10 +12,10 @@ const path = require('path');
 
 const isProduction = function() {
   if (!process.env.ELEVENTY_ENV) {
-    return "development";
+    return false; // default to dev
   }
 
-  return process.env.ELEVENTY_ENV;
+  return process.env.ELEVENTY_ENV == "production";
 }
 
 module.exports = function(eleventyConfig) {
