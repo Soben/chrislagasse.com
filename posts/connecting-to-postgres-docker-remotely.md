@@ -60,7 +60,7 @@ Provide it with a name for easy reference.
 
 {% image "images/docker-postgres-3.png", "The 'General' tab of registering a postgres server, with fields such as the requied 'Name', options to select colors for easy reference, and what group the new server belongs to." %}
 
-under the "Connection" tab, provide the IP address discovered above for the Hostname, and replace the port if it is different than what Docker says. Then update the Username and Password fields with correct values.
+Under the "Connection" tab, provide the IP address discovered above for the Hostname, and replace the port if it is different than what Docker says. Then update the Username and Password fields with correct values.
 
 {% image "images/docker-postgres-4.png", "The 'Connections' tab of registering a postgres server. The hostname set to the docker container's IP (in this case 666.13.0.1), the port (default of 5432), and other common fields tied to connecting to a database" %}
 
