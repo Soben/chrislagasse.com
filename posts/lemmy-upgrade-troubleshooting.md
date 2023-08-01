@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Lemmy Upgrades
 description: Recent upgrades to local Lemmy instances have caused a few issues. These were our solutions.
-date: 2023-07-31
+date: 2023-08-01
 tags:
   - lemmy
   - activitypub
