@@ -36,6 +36,11 @@ So here's mine, in no particular order:
 ## Websites/Services
 
 - [Duck Duck Go](https://duckduckgo.com/)
+- [Lemmy](https://join-lemmy.org)
+- [Mastodon](https://joinmastodon.org)
+- [Advanced Custom Fields](https://advancedcustomfields.com)
+- [Last.fm](https://last.fm)
+- [DuoLingo](https://duolingo.com)
 
 ## Development Tools
 
