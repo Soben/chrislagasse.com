@@ -1,4 +1,6 @@
 ---
+title: Tools, Frameworks, and more
+description: An extremely loose list of the various products, tools, frameworks, etc, that I use on a regular basis
 layout: layouts/page.njk
 ---
 
@@ -67,7 +69,7 @@ So here's mine, in no particular order:
 
 ## Personal Website Stack
 
-- Vercel
+- [Vercel](https://vercel.com/)
 - [Eleventy](https://www.11ty.dev/)
 - [Google Fonts](https://fonts.google.com) (Kadwa, Roboto, Open Source pro)
 - [Font Awesome](https://fontawesome.com)
