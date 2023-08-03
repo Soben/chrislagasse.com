@@ -1,0 +1,13 @@
+---
+title: All Posts by Chris Lagasse
+description: The full list of posts published
+layout: layouts/page.njk
+---
+
+<h1>All Posts</h1>
+
+<p>I post about whatever interests or that I find worthwhile. Likely it'll be about web development, food and drinks, or my general life experiences.</p>
+
+{% set postslist = collections.posts | reverse %}
+{% set postslistCounter = postsList | length %}
+{% include "partials/postslist.njk" %}
