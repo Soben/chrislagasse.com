@@ -54,19 +54,19 @@ Make a note of this IP address, we'll need it to connect to the Host after tunne
 
 Load up your local copy of pgAdmin and either click 'Object' in the toolbar, or right click 'Servers'
 
-{% image "images/docker-postgres-1.png", "Example of dropdown menu for pgAdmin on OSX, showing how to create a new Server by clicking Object > Register > Server..." %}
+{% image "src/img/posts/docker-postgres-1.png", "Example of dropdown menu for pgAdmin on OSX, showing how to create a new Server by clicking Object > Register > Server..." %}
 
 Provide it with a name for easy reference.
 
-{% image "images/docker-postgres-3.png", "The 'General' tab of registering a postgres server, with fields such as the requied 'Name', options to select colors for easy reference, and what group the new server belongs to." %}
+{% image "src/img/posts/docker-postgres-3.png", "The 'General' tab of registering a postgres server, with fields such as the requied 'Name', options to select colors for easy reference, and what group the new server belongs to." %}
 
 Under the "Connection" tab, provide the IP address discovered above for the Hostname, and replace the port if it is different than what Docker says. Then update the Username and Password fields with correct values.
 
-{% image "images/docker-postgres-4.png", "The 'Connections' tab of registering a postgres server. The hostname set to the docker container's IP (in this case 666.13.0.1), the port (default of 5432), and other common fields tied to connecting to a database" %}
+{% image "src/img/posts/docker-postgres-4.png", "The 'Connections' tab of registering a postgres server. The hostname set to the docker container's IP (in this case 666.13.0.1), the port (default of 5432), and other common fields tied to connecting to a database" %}
 
 After these changes, head over to the "SSH Tunnel" tab and provide your details there for connecting to your server. In the case of Digital Ocean (the majority of the time), you'll want to select "Indentity File" for the Authentication method and select the file on your system.
 
-{% image "images/docker-postgres-5.png", "The 'SSH Tunnel' tab of registering a postgres server. Provide your server's hostname (commonly an ip), port, and username. We chose the Authentication method of 'identity file' and selected our local ssh private key" %}
+{% image "src/img/posts/docker-postgres-5.png", "The 'SSH Tunnel' tab of registering a postgres server. Provide your server's hostname (commonly an ip), port, and username. We chose the Authentication method of 'identity file' and selected our local ssh private key" %}
 
 After all of this, select "Save" at the bottom and you should successfully connect!
 
@@ -78,11 +78,11 @@ You should have successfully managed to connect to your database. If you're havi
 
 The tables are several nested layers down by going to Database > {name} > Schemas > Public > Tables
 
-{% image "images/docker-postgres-6.png", "An example of the server's tree in the sidebar after successfully connecting, showing the path, and other options, leading to the 'Tables' list." %}
+{% image "src/img/posts/docker-postgres-6.png", "An example of the server's tree in the sidebar after successfully connecting, showing the path, and other options, leading to the 'Tables' list." %}
 
 But you can start navigating the content early by right-clicking the database and selecting one of the Tools listed, such as 'Query Tool'
 
-{% image "images/docker-postgres-7.png", "The secondary menu triggered by a right click of the 'server' in the sidebar, showcasing the options available, including 'Query Tool', which allows you to enter your SQL queries to call against the database." %}
+{% image "src/img/posts/docker-postgres-7.png", "The secondary menu triggered by a right click of the 'server' in the sidebar, showcasing the options available, including 'Query Tool', which allows you to enter your SQL queries to call against the database." %}
 
 ## Conclusion
 
