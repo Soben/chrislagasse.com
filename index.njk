@@ -22,7 +22,7 @@ layout: layouts/homepage.njk
     <div class="section__inner">
       <h2>Read</h2>
 
-      {% set postslist = collections.posts | reverse | head(5) %}
+      {% set postslist = collections.posts | reverse | head(3) %}
       {% set postslistCounter = postsList | length %}
       {% include "partials/postslist.njk" %}
 
