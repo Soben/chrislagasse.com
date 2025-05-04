@@ -6,7 +6,7 @@ Color Palette: https://coolors.co/25282d-375375-7d98ac-b64d46-f8f9f7
 
 - Eleventy
 - Sass
-- Vercel (formerly Zeit)
+- Render.io
 
 ## Uses
 
