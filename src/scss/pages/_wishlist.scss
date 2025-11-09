@@ -1,0 +1,111 @@
+// Wishlist page styles
+.wish-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+.wish-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba($black, 0.1);
+  border: 1px solid rgba($light-blue, 0.2);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba($black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    flex: 1;
+
+    a {
+      color: $black;
+      text-decoration: none;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  &__priority {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+
+    // High priority (1-3) - Red
+    &.priority-1,
+    &.priority-2,
+    &.priority-3 {
+      background-color: #fee2e2;
+      color: #dc2626;
+    }
+
+    // Medium priority (4-7) - Orange
+    &.priority-4,
+    &.priority-5,
+    &.priority-6,
+    &.priority-7 {
+      background-color: #fef3c7;
+      color: #d97706;
+    }
+
+    // Low priority (8-10) - Green
+    &.priority-8,
+    &.priority-9,
+    &.priority-10 {
+      background-color: #dcfce7;
+      color: #16a34a;
+    }
+  }
+
+  &__description {
+    color: #374151;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba($light-blue, 0.2);
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  &__price {
+    font-weight: bold;
+    color: $red;
+    font-size: 1rem;
+  }
+
+  &__quantity {
+    background-color: rgba($light-blue, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+}

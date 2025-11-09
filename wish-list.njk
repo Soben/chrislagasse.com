@@ -1,0 +1,43 @@
+---
+layout: layouts/page.njk
+---
+
+<h1>Wish List</h1>
+
+<p>I've been working on dropping Amazon from my life for a while now. While I haven't fully succeeded, I am keeping my Wish List off of their platform.</p>
+
+<p>You're more than welcome to purchase the products on Amazon or through the retailers listed.</p>
+
+<div class="wish-list">
+  {% for item in wishlist.items | sort(attribute='priority') | reverse %}
+    <div class="wish-item">
+      <div class="wish-item__header">
+        {% if item.link %}
+          <h3 class="wish-item__title">
+            <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.name }}</a>
+          </h3>
+        {% else %}
+          <h3 class="wish-item__title">{{ item.name }}</h3>
+        {% endif %}
+        {% if item.priority %}
+          <span class="wish-item__priority priority-{{ item.priority }}">Priority {{ item.priority }}</span>
+        {% endif %}
+      </div>
+      
+      {% if item.notes %}
+        <div class="wish-item__description">
+          {{ item.notes }}
+        </div>
+      {% endif %}
+      
+      <div class="wish-item__footer">
+        {% if item.price %}
+          <span class="wish-item__price">{{ item.price }}</span>
+        {% endif %}
+        {% if item.quantity %}
+          <span class="wish-item__quantity">Qty: {{ item.quantity }}</span>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

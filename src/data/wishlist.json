@@ -1,0 +1,103 @@
+{
+	"items": [
+		{
+			"quantity": 1,
+			"name": "Disney's Illusion Island - Digital or Physical Edition",
+			"link": "https://www.nintendo.com/us/store/products/disney-illusion-island-switch/",
+			"priority": 10,
+			"price": "$29.99",
+			"notes": "Digital is sufficient, but physical is fine too."
+		},
+		{
+			"quantity": "1-2",
+			"name": "Joy Cons (Nintendo Switch Controllers)",
+			"link": "https://www.nintendo.com/us/store/hardware/joy-con-and-controllers/#p=1&sort=df&show=0&f=currentSystems&currentSystems=Nintendo+Switch",
+			"priority": 5,
+			"price": "$79.99 (new), ~$50 (refurbished)",
+			"notes": "Refurbished is less expensive and should work just as well. Need at least a Right Joy Con, but a pair makes most sense."
+		},
+		{
+			"quantity": 1,
+			"name": "ascolour Relax Faded Zip Hood - Either Color, Medium Size",
+			"link": "https://ascolour.com/relax-faded-zip-hood-5170/",
+			"priority": 1,
+			"price": "$54.00"
+		},
+		{
+			"quantity": 1,
+			"name": "Lorcana TCG: Azurite Sea Illumineers Trove",
+			"link": "https://www.ravensburger.us/en-US/products/disney-lorcana/trove-packs/disney-lorcana-tcg-azurite-sea-illumineers-trove-11098432",
+			"priority": 8,
+			"price": "$49.99"
+		},
+		{
+			"quantity": "??",
+			"name": "Lorcana TCG Booster Packs, etc.",
+			"link": "https://www.ravensburger.us/en-US/products/disney-lorcana/",
+			"priority": 8,
+			"price": "$5.00+",
+			"notes": "Any Lorcana TCG Booster Packs, Sets. Card collection/deck-building."
+		},
+		{
+			"quantity": 2,
+			"name": "500 Count Card Storage Boxes",
+			"link": "https://www.bcwsupplies.com/500-card-storage-box",
+			"priority": 1,
+			"price": "~$4.00",
+			"notes": "Boxes to store trading cards (Lorcana, Pokemon, etc.)"
+		},
+		{
+			"quantity": 10,
+			"name": "Borealis Light Smoke d6 Dice (or similar)",
+			"link": "https://www.chessex.com/borealis-12mm-wpips-light-smokesilver-luminary-d6",
+			"priority": 5,
+			"price": "$0.45",
+			"notes": "Using them for damage counters in Disney Lorcana. Any similar d6 dice is fine."
+		},
+		{
+			"quantity": 1,
+			"name": "Polymaker PLA Filament Variety Pack from Costco",
+			"link": "https://www.costco.com/s?keyword=polymaker",
+			"priority": 5,
+			"price": "$79.99+",
+			"notes": "Filaments from Polymaker or similar brands are great. This specific pack is a good value from Costco (online only)."
+		},
+		{
+			"quantity": "1+",
+			"name": "Polymaker PLA Filaments (Panchroma or Polyterra)",
+			"link": "https://polymaker.com/panchroma/",
+			"priority": 5,
+			"price": "$20.00+",
+			"notes": "Filaments from Polymaker or similar brands are great."
+		},
+		{
+			"quantity": 1,
+			"name": "ThirdReality Smart Button",
+			"link": "https://3reality.com/product/smart-button/",
+			"priority": 8,
+			"price": "$19.99"
+		},
+		{
+			"quantity": 1,
+			"name": "ThirdReality Smart Outlets (4 pack)",
+			"link": "https://3reality.com/product/smart-plug-gen1/",
+			"priority": 5,
+			"price": "$30.99",
+			"notes": "Single outlets are fine too."
+		},
+		{
+			"quantity": 1,
+			"name": "'The City We Became' by N.K. Jemisin",
+			"link": "https://bookshop.org/p/books/the-city-we-became-n-k-jemisin/dcfa29e97ff83906?ean=9780316509886&next=t",
+			"priority": 7,
+			"price": "$19.99"
+		},
+		{
+			"quantity": 1,
+			"name": "Model Building Tool Kit",
+			"link": "https://handy-manners.com/best-model-tool-kit/",
+			"priority": 3,
+			"price": "~$8.99+"
+		}
+	]
+}
