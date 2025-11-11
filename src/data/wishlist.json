@@ -98,6 +98,14 @@
 			"link": "https://handy-manners.com/best-model-tool-kit/",
 			"priority": 3,
 			"price": "~$8.99+"
-		}
+		},
+    {
+      "quantity": "?",
+      "name": "Books, Books, Books",
+      "link": "https://bookshop.org/wishlists/7730cc16ace77cb73c84dd68b7a4afec286712c1",
+      "priority": 1,
+      "price": "$15+",
+      "notes": "My wishlist for Books can be found over at Bookshop.org"
+    }
 	]
 }
