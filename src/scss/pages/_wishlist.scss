@@ -39,9 +39,12 @@
     a {
       color: $black;
       text-decoration: none;
+      transition: color 0.2s ease;
 
       &:hover {
         color: $red;
+        text-decoration: underline;
+        border-bottom: none; // Override wysiwyg.css
       }
     }
   }

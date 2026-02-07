@@ -9,7 +9,7 @@ layout: layouts/page.njk
 <p>You're more than welcome to purchase the products on Amazon or through the retailers listed.</p>
 
 <div class="wish-list">
-  {% for item in wishlist.items | sort(attribute='priority') | reverse %}
+  {% for item in wishlist.items | rejectattr('received', 'equalto', true) | sort(attribute='priority') | reverse %}
     <div class="wish-item">
       <div class="wish-item__header">
         {% if item.link %}

@@ -6,7 +6,8 @@
 			"link": "https://www.nintendo.com/us/store/products/disney-illusion-island-switch/",
 			"priority": 10,
 			"price": "$29.99",
-			"notes": "Digital is sufficient, but physical is fine too."
+			"notes": "Digital is sufficient, but physical is fine too.",
+			"received": true
 		},
 		{
 			"quantity": "1-2",
@@ -28,7 +29,8 @@
 			"name": "Lorcana TCG: Azurite Sea Illumineers Trove",
 			"link": "https://www.ravensburger.us/en-US/products/disney-lorcana/trove-packs/disney-lorcana-tcg-azurite-sea-illumineers-trove-11098432",
 			"priority": 8,
-			"price": "$49.99"
+			"price": "$49.99",
+			"received": true
 		},
 		{
 			"quantity": "??",
@@ -44,7 +46,8 @@
 			"link": "https://www.bcwsupplies.com/500-card-storage-box",
 			"priority": 1,
 			"price": "~$4.00",
-			"notes": "Boxes to store trading cards (Lorcana, Pokemon, etc.)"
+			"notes": "Boxes to store trading cards (Lorcana, Pokemon, etc.)",
+			"received": true
 		},
 		{
 			"quantity": 10,
@@ -97,7 +100,8 @@
 			"name": "Model Building Tool Kit",
 			"link": "https://handy-manners.com/best-model-tool-kit/",
 			"priority": 3,
-			"price": "~$8.99+"
+			"price": "~$8.99+",
+			"received": true
 		},
     {
       "quantity": "?",
