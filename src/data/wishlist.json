@@ -2,6 +2,14 @@
 	"items": [
     {
       "quantity": 1,
+      "name": "Edifier Speakers",
+      "link": "https://edifier-online.com/products/edifier-r33bt-black",
+      "priority": 10,
+      "price": "$99.99",
+      "notes": "R33BT Active Computer Speakers -- we need to replace our old BOSE SoundLink for the Record Player"
+    },
+    {
+      "quantity": 1,
       "name": "TOPO Designs Ripstop Belt Bag",
       "link": "https://topodesigns.com/products/ripstop-belt-bag-final-sale?variant=44957283352629",
       "priority": 8,
