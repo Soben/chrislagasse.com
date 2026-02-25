@@ -1,6 +1,14 @@
 {
 	"items": [
     {
+      "quantity": 5,
+      "name": "AirCard",
+      "link": "https://rollingsquare.com/products/aircard",
+      "priority": 6,
+      "price": "$29.90",
+      "notes": "I've been considering putting these in our cars or the kids backpacks, so we can help track them if anything happens, etc. There's effectively a half-off sale if you buy 5 right now (for $100)"
+    },
+    {
       "quantity": 1,
       "name": "Edifier Speakers",
       "link": "https://edifier-online.com/products/edifier-r33bt-black",
