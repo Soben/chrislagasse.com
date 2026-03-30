@@ -1,6 +1,22 @@
 {
 	"items": [
     {
+      "quantity": 1,
+      "name": "Century: Golem Edition",
+      "link": "https://boardgamegeek.com/boardgame/232832/century-golem-edition",
+      "priority": 8,
+      "price": "$38.00",
+      "notes": "Really fun board game. Definitely some less expensive options available (see link)"
+    },
+    {
+      "quantity": 1,
+      "name": "Life After Cars",
+      "link": "https://www.lifeaftercars.com/",
+      "priority": 6,
+      "price": "$28.00",
+      "notes": "Sarah Goodyear of War On Cars podcast published this book recently, and I've been interested in it."
+    },
+    {
       "quantity": 5,
       "name": "AirCard",
       "link": "https://rollingsquare.com/products/aircard",
